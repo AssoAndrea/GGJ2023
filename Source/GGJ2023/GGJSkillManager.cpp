@@ -123,6 +123,7 @@ void AGGJSkillManager::FillStruct(FSkillStruct& Struct,const FSkillDataStruct& S
 	Struct.SkillType = Skill.SkillType;
 	Struct.StatsToModify = Skill.StatsToModify;
 	Struct.Value = Skill.BuffValue ? bIsBuff : Skill.DebuffValue;
+	UE_LOG(LogTemp, Warning, TEXT("Value: %f"),Struct.Value);
 }
 
 // Called every frame
